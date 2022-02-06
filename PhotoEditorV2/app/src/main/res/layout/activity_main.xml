@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.photoeditorv2.MainActivity">
+
+    <Button
+        android:id="@+id/previous_button"
+        android:layout_width="149dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/background_dark"
+        android:onClick="prev"
+        android:text="Previous"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/next_button"
+        app:layout_constraintTop_toBottomOf="@+id/photo"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="151dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/background_dark"
+        android:onClick="next"
+        android:text="Next"
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photo"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="362dp"
+        android:layout_height="255dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/edit_button"
+        android:layout_width="164dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="116dp"
+        android:onClick="edit"
+        android:text="Edit Photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
